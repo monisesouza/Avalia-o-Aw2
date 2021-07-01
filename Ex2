@@ -1,0 +1,30 @@
+<! DOCTYPE HTML>
+< html >
+    < cabeça >
+        < title > Exercicio 1 </ title >
+    </ head >
+    < corpo >
+    < form  method  =  " POST "  action = " index2.php " >
+    N < input  type  =  " text "  name = " txt "  value =  " 0 " >
+    K < input  type  =  " text "  name = " txtK "  value =  " 0 " >
+    < input  type = " submit "  value = " Calcular "  name = " cmdEnviar " >
+   
+    </ body >
+</ html >
+       <? php
+        $ N = $ _POST [ 'txt' ];
+        $ k = $ _POST [ 'txtK' ];
+        $ X = 1 ;
+        $ Z = 2 ;
+        $ vetor = array ();
+       
+
+para ( $ X = 0 ; $ X < $ k ; $ X ++) {
+
+    $ vetor [] = $ Z * $ N ;
+$ Z = $ Z + 1 ;
+
+
+}
+print_r ( $ vetor );
+?>
